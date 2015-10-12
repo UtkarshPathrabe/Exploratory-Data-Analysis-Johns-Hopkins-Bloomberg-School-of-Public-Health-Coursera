@@ -20,11 +20,12 @@ Question 01
 -----------
 
 Under the lattice graphics system, what do the primary plotting
-functions like xyplot() and bwplot() return?  
-\* an object of class `lattice`.  
-\* an object of class `plot`.  
-\* nothing; only a plot is made.  
-\* an object of class `trellis`.
+functions like xyplot() and bwplot() return?
+
+-   an object of class `lattice`.  
+-   an object of class `plot`.  
+-   nothing; only a plot is made.  
+-   an object of class `trellis`.
 
 ### Answer
 
@@ -69,11 +70,12 @@ lines, or text to the plot, in addition to customizing axis labels or
 adding titles. Different plotting systems have different sets of
 functions for annotating plots in this way. Which of the following
 functions can be used to annotate the panels in a multi-panel lattice
-plot?  
-\* lines()  
-\* text()  
-\* axis()  
-\* panel.lmline()
+plot?
+
+-   lines()  
+-   text()  
+-   axis()  
+-   panel.lmline()
 
 ### Answer
 
@@ -90,12 +92,13 @@ device.
     data(airquality)
     p <- xyplot(Ozone ~ Wind | factor(Month), data = airquality)
 
-Which of the following is an explanation for why no plot appears?  
-\* There is a syntax error in the call to xyplot().  
-\* The xyplot() function, by default, sends plots to the PDF device.  
-\* The variables being plotted are not found in that dataset.  
-\* The object 'p' has not yet been printed with the appropriate print
-method.
+Which of the following is an explanation for why no plot appears?
+
+-   There is a syntax error in the call to xyplot().  
+-   The xyplot() function, by default, sends plots to the PDF device.  
+-   The variables being plotted are not found in that dataset.  
+-   The object 'p' has not yet been printed with the appropriate
+    print method.
 
 ### Answer
 
@@ -116,11 +119,12 @@ Question 05
 -----------
 
 In the lattice system, which of the following functions can be used to
-finely control the appearance of all lattice plots?  
-\* splom()  
-\* par()  
-\* trellis.par.set()  
-\* print.trellis()
+finely control the appearance of all lattice plots?
+
+-   splom()  
+-   par()  
+-   trellis.par.set()  
+-   print.trellis()
 
 ### Answer
 
@@ -129,11 +133,12 @@ finely control the appearance of all lattice plots?
 Question 06
 -----------
 
-What is ggplot2 an implementation of?  
-\* the Grammar of Graphics developed by Leland Wilkinson.  
-\* the base plotting system in R.  
-\* the S language originally developed by Bell Labs.  
-\* a 3D visualization system.
+What is ggplot2 an implementation of?
+
+-   the Grammar of Graphics developed by Leland Wilkinson.  
+-   the base plotting system in R.  
+-   the S language originally developed by Bell Labs.  
+-   a 3D visualization system.
 
 ### Answer
 
@@ -149,12 +154,13 @@ Load the \`airquality' dataset form the datasets package in R.
 
 I am interested in examining how the relationship between ozone and wind
 speed varies across each month. What would be the appropriate code to
-visualize that using ggplot2?  
-\* `qplot(Wind, Ozone, data = airquality, facets = . ~ factor(Month))`  
-\* `qplot(Wind, Ozone, data = airquality, geom = "smooth")`  
-\* `airquality = transform(airquality, Month = factor(Month))`  
-`qplot(Wind, Ozone, data = airquality, facets = . ~ Month)`  
-\* `qplot(Wind, Ozone, data = airquality)`
+visualize that using ggplot2?
+
+-   `qplot(Wind, Ozone, data = airquality, facets = . ~ factor(Month))`  
+-   `qplot(Wind, Ozone, data = airquality, geom = "smooth")`  
+-   `airquality = transform(airquality, Month = factor(Month))`  
+    `qplot(Wind, Ozone, data = airquality, facets = . ~ Month)`  
+-   `qplot(Wind, Ozone, data = airquality)`
 
 ### Answer
 
@@ -174,11 +180,12 @@ visualize that using ggplot2?
 Question 08
 -----------
 
-What is a geom in the ggplot2 system?  
-\* a method for making conditioning plots.  
-\* a method for mapping data to attributes like color and size.  
-\* a plotting object like point, line, or other shape.  
-\* a statistical transformation.
+What is a geom in the ggplot2 system?
+
+-   a method for making conditioning plots.  
+-   a method for mapping data to attributes like color and size.  
+-   a plotting object like point, line, or other shape.  
+-   a statistical transformation.
 
 ### Answer
 
@@ -194,11 +201,13 @@ When I run the following code I get an error:
     print(g)
 
 I was expecting a scatterplot of 'votes' and 'rating' to appear. What's
-the problem?  
-\* ggplot does not yet know what type of layer to add to the plot.  
-\* The dataset is too large and hence cannot be plotted to the screen.  
-\* The object 'g' does not have a print method.  
-\* There is a syntax error in the call to ggplot.
+the problem?
+
+-   ggplot does not yet know what type of layer to add to the plot.  
+-   The dataset is too large and hence cannot be plotted to the
+    screen.  
+-   The object 'g' does not have a print method.  
+-   There is a syntax error in the call to ggplot.
 
 ### Answer
 
@@ -214,11 +223,12 @@ package with the library() function, I can run
     qplot(votes, rating, data = movies)
 
 How can I modify the the code above to add a smoother to the
-scatterplot?  
-\* `qplot(votes, rating, data = movies, panel = panel.loess)`  
-\* `qplot(votes, rating, data = movies) + stats_smooth("loess")`  
-\* `qplot(votes, rating, data = movies, smooth = "loess")`  
-\* `qplot(votes, rating, data = movies) + geom_smooth()`
+scatterplot?
+
+-   `qplot(votes, rating, data = movies, panel = panel.loess)`  
+-   `qplot(votes, rating, data = movies) + stats_smooth("loess")`  
+-   `qplot(votes, rating, data = movies, smooth = "loess")`  
+-   `qplot(votes, rating, data = movies) + geom_smooth()`
 
 ### Answer
 

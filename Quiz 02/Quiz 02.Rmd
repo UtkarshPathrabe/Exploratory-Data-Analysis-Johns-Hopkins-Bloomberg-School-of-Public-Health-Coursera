@@ -14,6 +14,7 @@ Quiz 01
 Question 01
 -----------  
 Under the lattice graphics system, what do the primary plotting functions like xyplot() and bwplot() return?  
+
 * an object of class `lattice`.  
 * an object of class `plot`.  
 * nothing; only a plot is made.  
@@ -48,6 +49,7 @@ xyplot(weight ~ Time | Diet, BodyWeight)
 Question 03  
 -----------  
 Annotation of plots in any plotting system involves adding points, lines, or text to the plot, in addition to customizing axis labels or adding titles. Different plotting systems have different sets of functions for annotating plots in this way. Which of the following functions can be used to annotate the panels in a multi-panel lattice plot?  
+
 * lines()  
 * text()  
 * axis()  
@@ -66,6 +68,7 @@ data(airquality)
 p <- xyplot(Ozone ~ Wind | factor(Month), data = airquality)
 ```  
 Which of the following is an explanation for why no plot appears?  
+
 * There is a syntax error in the call to xyplot().  
 * The xyplot() function, by default, sends plots to the PDF device.  
 * The variables being plotted are not found in that dataset.  
@@ -86,6 +89,7 @@ print(p)
 Question 05
 -----------  
 In the lattice system, which of the following functions can be used to finely control the appearance of all lattice plots?  
+
 * splom()  
 * par()  
 * trellis.par.set()  
@@ -97,6 +101,7 @@ In the lattice system, which of the following functions can be used to finely co
 Question 06
 -----------  
 What is ggplot2 an implementation of?  
+
 * the Grammar of Graphics developed by Leland Wilkinson.  
 * the base plotting system in R.  
 * the S language originally developed by Bell Labs.  
@@ -113,6 +118,7 @@ library(datasets)
 data(airquality)
 ```  
 I am interested in examining how the relationship between ozone and wind speed varies across each month. What would be the appropriate code to visualize that using ggplot2?  
+
 * `qplot(Wind, Ozone, data = airquality, facets = . ~ factor(Month))`  
 * `qplot(Wind, Ozone, data = airquality, geom = "smooth")`  
 * `airquality = transform(airquality, Month = factor(Month))`  
@@ -135,6 +141,7 @@ qplot(Wind, Ozone, data = airquality, facets = . ~ Month)
 Question 08
 -----------  
 What is a geom in the ggplot2 system?  
+
 * a method for making conditioning plots.  
 * a method for mapping data to attributes like color and size.  
 * a plotting object like point, line, or other shape.  
@@ -152,6 +159,7 @@ g <- ggplot(movies, aes(votes, rating))
 print(g)
 ```  
 I was expecting a scatterplot of 'votes' and 'rating' to appear. What's the problem?  
+
 * ggplot does not yet know what type of layer to add to the plot.  
 * The dataset is too large and hence cannot be plotted to the screen.  
 * The object 'g' does not have a print method.  
@@ -167,6 +175,7 @@ The following code creates a scatterplot of 'votes' and 'rating' from the movies
 qplot(votes, rating, data = movies)
 ```  
 How can I modify the the code above to add a smoother to the scatterplot?  
+
 * `qplot(votes, rating, data = movies, panel = panel.loess)`  
 * `qplot(votes, rating, data = movies) + stats_smooth("loess")`  
 * `qplot(votes, rating, data = movies, smooth = "loess")`  
